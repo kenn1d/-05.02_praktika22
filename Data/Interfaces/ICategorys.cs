@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace praktika22.Data.Interfaces
 {
-    public class ICategorys
+    public interface ICategorys
     {
         public IEnumerable<Categorys> AllCategorys { get; }
     }
