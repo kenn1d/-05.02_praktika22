@@ -9,17 +9,17 @@ namespace praktika22.Controllers
         private IItems IAllItems;
         private ICategorys IAllCategorys;
 
-        public ItemsController(IItems iAllItems, ICategorys iAllCategorys)
+        public ItemsController(IItems IAllItems, ICategorys IAllCategorys)
         {
-            IAllItems = iAllItems;
-            IAllCategorys = iAllCategorys;
+            this.IAllItems = IAllItems;
+            this.IAllCategorys = IAllCategorys;
         }
 
         public ActionResult List()
         {
             ViewBag.Title = "Страница с предметами";
-            var Items = IAllItems;
-            return Json(Items);
+            var Items = IAllItems.AllItems;
+            return View(Items);
         }
     }
 }
