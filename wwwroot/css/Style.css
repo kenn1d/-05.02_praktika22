@@ -15,6 +15,17 @@
     float: left;
 }
 
+.header h2 {
+    width: 40px;
+    margin: 10px;
+    float: left;
+}
+.header p {
+    width: 40px;
+    margin: 10px;
+    float: left;
+}
+
 .header .search {
     margin-top: 10px;
     height: 40px;
